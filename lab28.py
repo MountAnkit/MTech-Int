@@ -1,3 +1,5 @@
+'''WAP to create a Complex class having real and imaginary as it attributes.
+Overload the +,-,/,* and += operators for objects of Complex class.'''
 class Complex:
     def __init__(self,re,im):
         self.re = re

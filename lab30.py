@@ -1,3 +1,4 @@
+'''WAP to inspect the program code using the functions of inspect module.'''
 import inspect
 import math
 class A():

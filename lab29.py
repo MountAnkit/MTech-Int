@@ -1,3 +1,6 @@
+'''Write a program to inspect the object using type() ,id(), isinstance(), issubclass()
+and callable() built-in function.'''
+
 class Name():
     def __init__(self,name,age):
         self.name = name

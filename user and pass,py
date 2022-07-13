@@ -1,0 +1,38 @@
+from tkinter import *
+a = Tk()
+a.minsize(width=90,height=150)
+a.maxsize(width=400,height=1000)
+
+def func():
+    x = var.get()
+    y = var1.get()
+    print(x)
+    print(y)
+    lb1.config(text=x)
+    lb2.config(text=y)
+
+lb1 = Label(a,text="User Name",bg = "blue",fg = "white")
+lb1.place(x = 1,y = 2)
+var = StringVar()
+c = Entry(a,text="Enter Username",bg = 'yellow',textvariable=var)
+
+c.place(x = 70, y = 2)
+
+
+lb2 = Label(a,text="Password",bg = "blue",fg = "white")
+lb2.place(x = 1,y = 20)
+var1 = StringVar()
+d = Entry(a,text="Enter Password",bg = 'yellow',textvariable=var1)
+d.place(x = 70, y = 20)
+
+lb1 = Label(a,text = "Nothing",bg = "grey",fg = 'red')
+lb1.pack()
+lb2 = Label(a, text = "Nothing",bg = "grey",fg = 'red')
+lb2.pack()
+
+
+
+butt = Button(a,text="Submit",bg = 'pink',fg = "red",command=func)
+butt.place(x=10,y=80)
+
+a.mainloop()
